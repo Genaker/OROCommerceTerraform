@@ -1,11 +1,6 @@
 # ORO Commerce Terraform Cloud Infrastructure 
 
-![ORO Cloud Terraform Infrastructure](https://user-images.githubusercontent.com/9213670/134857584-7771a2ec-73d1-45d0-858f-d628c13e21b9.png)
-
-![ORO Cloud Terraform Infrastructure](https://user-images.githubusercontent.com/9213670/134946003-ccb34672-871e-456c-885f-4d16b0781286.png)
-
-![ORO Cloud Terraform Infrastructure](https://user-images.githubusercontent.com/9213670/134946402-8a4ff61d-5def-448a-83dd-89eadecaa550.png)
-
+![ORO Cloud Terraform Infrastructure](https://user-images.githubusercontent.com/9213670/135354428-cbcbd29a-65ea-4209-85d5-c0937fa51864.png)
 
 ## Quick start
 
