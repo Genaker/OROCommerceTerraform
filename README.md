@@ -31,7 +31,7 @@ Alternatively, you can edit `terragrunt.hcl` and use another authentication mech
 
 ## Create and manage your infrastructure
 
-Infrastructure consists of multiple layers (oro_auto_scaling, mysql, load_balancer, ...) where each layer is described using one [Terraform module](https://www.terraform.io/docs/configuration/modules.html) with `inputs` arguments specified in `terragrunt.hcl` in respective layer's directory.
+Infrastructure consists of multiple layers (oro_auto_scaling, postgresql, load_balancer, ...) where each layer is described using one [Terraform module](https://www.terraform.io/docs/configuration/modules.html) with `inputs` arguments specified in `terragrunt.hcl` in respective layer's directory.
 
 Navigate through layers to review and customize values inside `inputs` block.
 

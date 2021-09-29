@@ -60,10 +60,11 @@ inputs = {
   # The family of the DB parameter group
   # type: string
   family = "mariadb10.4"
+  # ToDo: Replace with PostgreSQL
 
   # The name of the RDS instance, if omitted, Terraform will assign a random, unique identifier
   # type: string
-  identifier = "mysql"
+  identifier = "PostgreSQL"
 
   # The instance type of the RDS instance
   # type: string
@@ -95,7 +96,7 @@ inputs = {
 
   # Username for the master DB user
   # type: string
-  username = "collie"
+  username = "oro_pg_user"
 
   # List of VPC security groups to associate
   # type: list(string)

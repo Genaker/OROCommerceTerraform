@@ -29,7 +29,7 @@ inputs = {
 
   # Name of security group
   # type: string
-  name = "My_Security"
+  name = "ElasticSearch_Security"
 
   # ID of the VPC where to create security group
   # type: string
