@@ -14,8 +14,8 @@ dependency "aws-data" {
   config_path = "../aws-data"
 }
 
-dependency "my_security" {
-  config_path = "../my_security"
+dependency "elasticsearch_security" {
+  config_path = "../elasticsearch_security"
 }
 
 dependency "oro_vpc" {
@@ -67,6 +67,5 @@ inputs = {
   
   tags = local.tags
 }
-
 
 # Test instance : curl $IP:9200
