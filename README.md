@@ -2,6 +2,15 @@
 
 ![ORO Cloud Terraform Infrastructure](https://user-images.githubusercontent.com/9213670/135354428-cbcbd29a-65ea-4209-85d5-c0937fa51864.png)
 
+OroCommerce B2B and B2C Cloud has the next components:
+ - Web Node with Auto Scaling and support of ARM Graviton 2 instances,
+ - ElasticSearch, 
+ - Relational database PostgreSQL RDS Aurora
+ - Redis ElasticCahe for Sessions and Caches 
+ - CloudWatch for monitoring and allerting 
+ - AWS SES(Simple Email Service)/SMTP to send email 
+ - NFS/EFS shared network file system 
+
 ## Quick start
 
 1. [Install Terraform 0.15 or newer](https://learn.hashicorp.com/tutorials/terraform/install-cli)
