@@ -53,7 +53,7 @@ inputs = {
   
   # List of VPC security groups to associate
   # type: list(string)
-  vpc_security_group_ids = [dependency.my_security.outputs.security_group_id]
+  vpc_security_group_ids = [dependency.elasticsearch_security.outputs.security_group_id]
 
   subnet_ids = dependency.oro_vpc.outputs.public_subnets
   
