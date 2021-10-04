@@ -43,8 +43,10 @@ inputs = {
   # type: string
   db_subnet_group_name = dependency.oro_vpc.outputs.database_subnet_group
 
-  option_group_name = "my-option-group"
-  option_group_use_name_prefix = false
+  # This should NOT create an option group since they are not supported for PostgreSQL
+  # https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithOptionGroups.html
+  #option_group_name = "my-option-group"
+  #option_group_use_name_prefix = false
   
   parameter_group_name = "my-parameter-group"
   parameter_group_use_name_prefix = false
