@@ -78,6 +78,10 @@ inputs = {
   # type: list(string)
   vpc_zone_identifier = dependency.oro_vpc.outputs.public_subnets
   
-  tags = {Deployment_Group = "web"}
+  tags = [{
+          key = "Deployment_Group"
+          value = "web"
+          propagate_at_launch = true
+         }]
   
 }
