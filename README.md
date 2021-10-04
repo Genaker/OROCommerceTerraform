@@ -67,10 +67,18 @@ DEPRECATED: Use **run-all destroy** instead.
 
 Destroy a ‘stack’ by running ‘terragrunt destroy’ in each subfolder.
 
-**Provisioned infrastructure configuration** 
-
+## Provisioned infrastructure configuration values
 ```
 terragrunt run-all output
+#or
+terragrunt output-all
+```
+or by modules:
+```
+cd load_balancer
+terragrunt run-all output
+#or
+terragrunt output-all --terragrunt-non-interactive
 ```
 
 The terraform/trragrunt **output** command is used to extract the value of an output variable from the state file.
