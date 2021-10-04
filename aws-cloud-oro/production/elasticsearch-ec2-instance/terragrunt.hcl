@@ -7,7 +7,7 @@ include {
 }
 
 dependencies {
-  paths = ["../aws-data", "../my_security", "../oro_vpc"]
+  paths = ["../aws-data", "../elasticsearch_security", "../oro_vpc"]
 }
 
 dependency "aws-data" {
