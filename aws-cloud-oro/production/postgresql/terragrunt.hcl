@@ -64,7 +64,7 @@ inputs = {
 
   # The name of the RDS instance, if omitted, Terraform will assign a random, unique identifier
   # type: string
-  identifier = "PostgreSQL"
+  identifier = "postgres"
 
   # The instance type of the RDS instance
   # type: string
