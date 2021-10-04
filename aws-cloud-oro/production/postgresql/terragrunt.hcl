@@ -63,6 +63,7 @@ inputs = {
   # ToDo: Replace with PostgreSQL
 
   # The name of the RDS instance, if omitted, Terraform will assign a random, unique identifier
+  # Notice: only lowercase alphanumeric characters and hyphens allowed in "identifier"
   # type: string
   identifier = "postgres"
 
