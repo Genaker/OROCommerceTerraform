@@ -67,6 +67,23 @@ DEPRECATED: Use **run-all destroy** instead.
 
 Destroy a ‘stack’ by running ‘terragrunt destroy’ in each subfolder.
 
+**Provisioned infrastructure configuration** 
+
+```
+terragrunt run-all output
+```
+
+The terraform/trragrunt **output** command is used to extract the value of an output variable from the state file.
+
+With no additional arguments, output will display all the outputs for the root module. If an output NAME is specified, only the value of that output is printed.
+
+The command-line flags are all optional. The list of available flags are:
+
+**-json** - If specified, the outputs are formatted as a JSON object, with a key per output. If NAME is specified, only the output specified will be returned. This can be piped into tools such as jq for further processing.
+**-raw** - If specified, Terraform will convert the specified output value to a string and print that string directly to the output, without any special formatting. This can be convenient when working with shell scripts, but it only supports string, number, and boolean values. Use -json instead for processing complex data types.
+**-no-color** - If specified, output won't contain any color.
+**-state=path** - Path to the state file. Defaults to "terraform.tfstate". Ignored when remote state is used.
+
 ## References
 
 * [Terraform documentation](https://www.terraform.io/docs/) and [Terragrunt documentation](https://terragrunt.gruntwork.io/docs/) for all available commands and features
