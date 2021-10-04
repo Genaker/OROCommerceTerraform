@@ -68,7 +68,7 @@ DEPRECATED: Use **run-all destroy** instead.
 Destroy a ‘stack’ by running ‘terragrunt destroy’ in each subfolder.
 
 ## Provisioned infrastructure configuration values
-After **apply** comand run:
+After **apply** command run:
 ```
 terragrunt run-all output
 #or
