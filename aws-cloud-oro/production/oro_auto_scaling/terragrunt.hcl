@@ -77,6 +77,7 @@ inputs = {
   # A list of subnet IDs to launch resources in. Subnets automatically determine which availability zones the group will reside. Conflicts with `availability_zones`
   # type: list(string)
   vpc_zone_identifier = dependency.oro_vpc.outputs.public_subnets
-
+  
+  tags = {Deployment_Group = "web"}
   
 }
