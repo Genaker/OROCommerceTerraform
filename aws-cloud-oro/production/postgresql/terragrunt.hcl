@@ -25,7 +25,7 @@ dependency "db_security" {
 inputs = {
   # The allocated storage in gigabytes
   # type: string
-  allocated_storage = "5"
+  allocated_storage = "9"
 
   # The days to retain backups for
   # type: number
@@ -51,15 +51,15 @@ inputs = {
   
   # The database engine to use
   # type: string
-  engine = "mariadb"
+  engine = "postgres"
 
   # The engine version to use
   # type: string
-  engine_version = "10.4.13"
+  engine_version = "12.8"
 
   # The family of the DB parameter group
   # type: string
-  family = "mariadb10.4"
+  family = "postgres12"
   # ToDo: Replace with PostgreSQL
 
   # The name of the RDS instance, if omitted, Terraform will assign a random, unique identifier
@@ -68,7 +68,7 @@ inputs = {
 
   # The instance type of the RDS instance
   # type: string
-  instance_class = "db.m6g.2xlarge"
+  instance_class = "db.m6g.large"
 
   # The window to perform maintenance in. Syntax: 'ddd:hh24:mi-ddd:hh24:mi'. Eg: 'Mon:00:00-Mon:03:00'
   # type: string
@@ -76,7 +76,7 @@ inputs = {
 
   # Specifies the major version of the engine that this option group should be associated with
   # type: string
-  major_engine_version = "10.4"
+  major_engine_version = "12"
 
   # Specifies if the RDS instance is multi-AZ
   # type: bool
