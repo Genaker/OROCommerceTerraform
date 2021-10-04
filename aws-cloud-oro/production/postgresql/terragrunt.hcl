@@ -45,6 +45,7 @@ inputs = {
 
   # This should NOT create an option group since they are not supported for PostgreSQL
   # https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithOptionGroups.html
+  # for MySQL
   #option_group_name = "my-option-group"
   #option_group_use_name_prefix = false
   
@@ -54,16 +55,24 @@ inputs = {
   # The database engine to use
   # type: string
   engine = "postgres"
+  
+  # For MySQL
+  # engine = "mariadb"
 
   # The engine version to use
   # type: string
   engine_version = "12.8"
+  
+  # For MySQL
+  # engine_version = "10.4.13"
 
   # The family of the DB parameter group
   # type: string
   family = "postgres12"
-  # ToDo: Replace with PostgreSQL
-
+  
+  # For MySQL
+  # family = "mariadb10.4"
+  
   # The name of the RDS instance, if omitted, Terraform will assign a random, unique identifier
   # Notice: only lowercase alphanumeric characters and hyphens allowed in "identifier"
   # type: string
@@ -80,6 +89,9 @@ inputs = {
   # Specifies the major version of the engine that this option group should be associated with
   # type: string
   major_engine_version = "12"
+  
+  # For MySQL
+  # major_engine_version = "10.4"
 
   # Specifies if the RDS instance is multi-AZ
   # type: bool
