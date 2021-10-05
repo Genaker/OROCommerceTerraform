@@ -29,7 +29,7 @@ locals {
   sleep 30
   echo "Install Elastic Search"
 
-  wget https://raw.githubusercontent.com/Genaker/ORO-AWS-Linux-2-Installation/master/install-elastic-search.sh
+  wget https://raw.githubusercontent.com/Genaker/Magento-AWS-Linux-2-Installation/master/install-elastic-search.sh
   sudo bash ./install-elastic-search.sh
   EOT
 
